@@ -16,9 +16,11 @@
     --memoria-bg: #FFB21E;
     --verbal-bg: #00BB8F;
     --visual-bg: #1125D6;
+    --very-light-blue: #ECF2FF;
 }
 body{
     font-size: 1.6rem;
+    background: var(--very-light-blue);
 }
 
 .resultado{
@@ -69,6 +71,7 @@ margin-bottom: 2.5rem;
 }
 .resumo{
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 }
 
 
@@ -126,3 +129,62 @@ border-radius: 12.8rem;
 font-size: 1.8rem;
 font-weight: 700;
             }
+
+ @media(min-width: 736px)
+ {
+
+body{
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      width: 736px;
+      background: var(--white);
+      border-radius: 3.2rem 0 0 3.2rem;
+    }
+
+.resultado{
+    padding-block: 3.8rem;
+    border-radius: 3.2rem;
+}
+
+.resultado h1{
+    font-size:2.4rem;
+    margin-bottom: 3.6rem;
+}
+
+
+.resultado div{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2.8rem;
+}
+
+.resultado div strong:nth-of-type(1)
+{
+    font-size:7.2rem;
+}
+.resultado div strong:nth-of-type(2)
+{
+    font-size:1.8rem;
+}
+.resultado h2{
+    font-size:3.2rem;
+    margin-bottom: 1.6rem;
+}
+.resultado p{
+    font-size: 1.8rem;
+}
+.resumo{
+padding: 3.8rem 4rem;
+}
+.resumo h2{
+font-size:2.4rem;
+margin-bottom: 3rem;
+}
+ }
